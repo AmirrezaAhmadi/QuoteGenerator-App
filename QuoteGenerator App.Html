@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="Assets/Css/Styles.css">
+</head>
+<body>
+    <div class="quote-box">
+        <h1>Quote of the Day</h1>
+        <blockquote>
+            <p id="quote">"Click the button to get a new quote!"</p>
+            <footer id="author">— Author</footer>
+        </blockquote>
+        <div class="buttons">
+            <button id="copyBtn" onclick="copyQuote()" disabled>
+                <img src="Assets/icons/copy-icon.svg" alt="Copy"> 
+            </button>
+            <a id="tweetBtn" href="" target="_blank" class="disabled-link">
+                <img src="Assets/icons/twitter-logo.svg" alt="Twitter"> 
+            </a>
+        </div>        
+        <button class="new-quote-btn" onclick="generateQuote()">New Quote</button>
+    </div>
+
+    <script src="Assets/Javacript/Script.js"></script>
+</body>
+</html>
